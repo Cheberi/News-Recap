@@ -11,13 +11,13 @@ def home():
     return render_template('index.html', news=news)
 
 
-@main.route('/aj-jazeera-english')
-def ajazeer():
+@main.route('/bbcnews')
+def bbc():
     news = get_source_news_al()
     return render_template('index.html', news=news)
 
 
-@main.route('/the-wahington-post')
+@main.route('/the-bbc-news')
 def wp():
     news = get_source_news_wp()
     return render_template('index.html', news=news)
