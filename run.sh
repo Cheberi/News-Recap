@@ -1,1 +1,1 @@
-python3.9 manage.py server 
+python3.8.10 manage.py server 
