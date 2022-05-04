@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" href="{{ url_for('static', filename='images/mic.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/bbc-one-hd-logo.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/world.css') }}">
 
-    <title>We Story News | Coding Journey</title>
+    <title>News Recap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% block head %} {% endblock %}
 </head>
 
@@ -22,7 +22,7 @@
                 <article class="nav-logo">
                     <div class="nav-logo-image">
                         <div class="nav-logo-image-img">
-                            <a href="{{ url_for('main.home') }}"><img src="{{ url_for('static',filename='images/logo.png') }}" alt="world-news icon"></a>
+                            <a href="{{ url_for('main.home') }}"><img src="{{ url_for('static',filename='img/sbs-world-news-2018-logo.png') }}" alt="world-news icon"></a>
                         </div>
                         <div class="nav-logo-image-company">
                             <a href="{{ url_for('main.home') }}">We Story</a>
@@ -40,16 +40,22 @@
                             <a href="https://www.bbc.com/" target="_blank">BBC Home</a>
                         </li>
                         <li>
-                            <a href="https://www.bbc.com/sport" target="_blank">BBC Sport</a>
+                            <a href="https://edition.cnn.com/world" target="_blank">CNN International</a>
                         </li>
-                        <li><a href="https://www.bbc.com/reel" target="_blank">BBC Reel</a></li>
+                        <li><a href="https://www.theguardian.com/world" target="_blank">The Guardian</a></li>
                     </ul>
                 </article>
                 <article class="nav-links2" id="menu2">
                     <ul class="nav-links2-ul">
-                        <li><a href="https://www.bbc.com/" target="_blank">AlJazeera</a></li>
-                        <li><a href="https://www.bbc.com/sport" target="_blank">Washington-post</a></li>
-                        <li><a href="https://www.bbc.com/reel" target="_blank">Associated press</a></li>
+                        <li>
+                            <a href="https://www.bbc.com/" target="_blank">BBC Home</a>
+                        </li>
+                        <li>
+                            <a href="https://edition.cnn.com/world" target="_blank">CNN International</a>
+                        </li>
+                        <li>
+                            <a href="https://www.theguardian.com/world" target="_blank">The Guardian</a>
+                        </li>
                     </ul>
                 </article>
             </section>
@@ -60,14 +66,14 @@
         <section class="footer">
             <article class="footer-logo-image">
                 <div class="footer-logo-image-img">
-                    <img src="{{url_for('static',filename='images/logo.png')}}" alt="world-news icon">
+                    <img src="{{url_for('static',filename='img/bbc-world-service-logo.png')}}" alt="world-news icon">
                 </div>
                 <div class="footer-logo-image-company">
-                    We Story
+                    News Recap
                 </div>
             </article>
             <article class="footer-copyright">
-                <h3>&copy 2022 copyright. All reserved</h3>
+                <h3>&copy 2022 copyright. All rights reserved</h3>
             </article>
         </section>
     </footer>
