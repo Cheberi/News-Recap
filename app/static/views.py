@@ -1,5 +1,5 @@
 from flask import render_template,request,redirect,url_for
-from . import main
+from ..main import main
 from ..requests import get_all_news, get_source_news_al, get_source_news_wp,get_source_news_ap, get_source_news_nn
 from ..models import Article
 
